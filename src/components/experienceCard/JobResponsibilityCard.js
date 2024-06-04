@@ -1,6 +1,5 @@
 import { Accordion, Panel } from "baseui/accordion";
 import React, { Component } from "react";
-import { MdWork } from "react-icons/md";
 import "./CustomPanelCard.css";
 import "./JobResponsibilityCard.css";
 import responsibilityImg from "../../assests/images/responsibility.png";

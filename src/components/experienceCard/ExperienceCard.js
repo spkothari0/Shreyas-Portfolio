@@ -7,8 +7,6 @@ import TechnologyUsed from './TechnologyUsedCard';
 class ExperienceCard extends Component {
   render() {
     const experience = this.props.experience;
-    const index = this.props.index;
-    const totalCards = this.props.totalCards;
     const theme = this.props.theme;
     return (
       <div>

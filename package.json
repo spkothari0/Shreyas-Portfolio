@@ -2,7 +2,7 @@
   "private": true,
   "name": "shreyas-portfolio",
   "version": "0.1.0",
-  "homepage": "https://spkothari0.github.io",
+  "homepage": "https://spkothari0.github.io/Shreyas-Portfolio",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
