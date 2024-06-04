@@ -1,7 +1,3 @@
-<p align="center"> 
-    <img src="images/masterportfolio-banner-light.png" align="center" height="150"></img>
-</p>
-
 <h1 align="center"> Software Developer Portfolio 🔥 </h1> 
 <h3 align="center"> A clean, beautiful, responsive portfolio for Software Developers! </h3>
 
