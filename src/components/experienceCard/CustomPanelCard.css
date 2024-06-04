@@ -1,0 +1,7 @@
+.panel-header {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 55% !important;
+    padding: 0 10px !important;
+}
