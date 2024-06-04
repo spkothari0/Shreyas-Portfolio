@@ -3,6 +3,7 @@ import fs from "fs";
 import dotenv from "dotenv";
 import { languages, projectTechStack } from "./git_data_fetcher_helper.js";
 
+
 dotenv.config();
 
 const openSource = {
