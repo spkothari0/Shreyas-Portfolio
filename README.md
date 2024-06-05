@@ -10,8 +10,6 @@
   </a>
 </p>
 
-:star: Star us on GitHub — it helps!
-
 # Sections 📚
 
 ✔️ Summary and About me\
@@ -23,9 +21,9 @@
 ✔️ Resume
 ✔️ Contact me
 
-To view a live example, **[click here](https://spkothari0.github.io/Shreyas-Portfolio)**
+Click here to visit Portfolio website: **[click here](https://spkothari0.github.io/Shreyas-Portfolio)**
 
-# Clone and Use 📋
+# How to run 💻
 
 - The website is completely built on `react-js` library of `javascript` and that's why we need `nodejs` and `npm` installed
 - While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above
