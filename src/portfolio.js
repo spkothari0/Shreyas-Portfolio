@@ -26,7 +26,7 @@ const greeting = {
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
     "https://drive.google.com/file/d/1YPD4wugu7bSMyvMK-F4Q59w11C-07_-U/view?usp=sharing",
-  portfolio_repository: "https://github.com/spkothari0",
+  portfolio_repository: "https://github.com/spkothari0/Shreyas-Portfolio",
   githubProfile: "https://github.com/spkothari0",
 };
 
@@ -629,7 +629,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "ShreyasProfessional.jpg",
     description:
-      "I am available on most social media. You can message me, I will reply within 2-3 working days. Best way to contact me is via email or LinkedIn. I am looking for internships and co-op opportunities majorly in Software Development and Cloud Computing domain.",
+      "👋I'm easily reachable on various social platforms and typically respond within 2-3 working days.📧For swift communication, reach out via email or LinkedIn. 🎯Currently seeking internships or co-op roles, particularly in Software Development💻 and Cloud Computing☁️. Looking forward to connecting with you !!😊",
   },
 
   // blogSection: {
