@@ -10,8 +10,6 @@
   </a>
 </p>
 
-:star: Star us on GitHub — it helps!
-
 # Sections 📚
 
 ✔️ Summary and About me\
@@ -23,7 +21,7 @@
 ✔️ Resume
 ✔️ Contact me
 
-To view a live example, **[click here](https://spkothari0.github.io/Shreyas-Portfolio)**
+Click here to visit Portfolio website: **[click here](https://spkothari0.github.io/Shreyas-Portfolio)**
 
 # How to run 💻
 
