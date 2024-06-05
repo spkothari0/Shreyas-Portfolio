@@ -2,10 +2,9 @@
 <h3 align="center"> A clean, beautiful, responsive portfolio for Software Developers! </h3>
 
 <p align="center">
-  <video width="320" height="240" controls>
-    <source src="images/PortfolioClip.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <a href="link(https://spkothari0.github.io/Shreyas-Portfolio/#/)" target="_blank">
+    <img src="images/PortfolioClip.gif"></img>
+  </a>
 </p>
   
 <p align="center">
