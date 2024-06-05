@@ -54,7 +54,7 @@ function getLanguageKeys(values) {
         return key;
       }
     }
-    return null; // Return null if no key is found for the given value
+    return value;
   });
 }
 
@@ -72,10 +72,8 @@ function getLanguageIcon(language) {
 }
 
 const getAdditionalTechStack = (projectname) => {
-  console.log("Starting getAdditionalTechStack for", projectname);
   let technologyList = [];
   let techUsed = projectTechStack[projectname] || [];
-
   if (techUsed.length === 0) {
     console.log("No additional tech stack found for", projectname, ". Please add the project in git_data_fetcher_helper.js");
     return technologyList;
@@ -112,7 +110,6 @@ fetch(baseUrl, {
       }
       obj["languages"] = newLangobjs;
       newProjects["data"].push(obj);
-      // console.log("newLangobjs:", newLangobjs);
     }
 
     console.log("Fetching the Pinned Projects Data.\n");

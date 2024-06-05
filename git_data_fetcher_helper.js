@@ -42,13 +42,11 @@ const languages = {
     ECS: "logos:aws-ecs",
     ECR: "logos:aws-ecr",
     EKS: "logos:aws-eks",
-    "AWS CDK": "logos:aws-cdk",
-    "AWS SAM": "logos:aws-sam",
 };
 
 const projectTechStack = {
-    "ShareFoodBite": [languages.React, languages.Redux, languages.Node, languages.Express, languages.MongoDB, languages.Firebase, languages.AWS, languages.Scss],
-    "University-Portal": [languages["Java Swing"], languages.MySQL],
+    "ShareFoodBite": [languages.React, languages.Redux, languages.Node, languages.Express, languages.MongoDB, languages.Firebase, languages.Scss],
+    "University-Portal": ["Java Swing", languages.MySQL],
     "Text-Utility-App": [languages.React],
     "my-linkedin-clone": [languages.React, languages.Redux, languages.Node, languages.Express, languages.Firebase],
     "news-app": [languages.React, languages.Redux]
