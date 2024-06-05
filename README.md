@@ -24,7 +24,7 @@
 ✔️ Resume
 ✔️ Contact me
 
-Click here to visit Portfolio website: **[click here](https://spkothari0.github.io/Shreyas-Portfolio)**
+Click here to visit the Portfolio: **[click here](https://spkothari0.github.io/Shreyas-Portfolio)**
 
 # How to run 💻
 
