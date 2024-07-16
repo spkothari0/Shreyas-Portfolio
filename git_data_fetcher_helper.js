@@ -18,7 +18,7 @@ const languages = {
     Rust: "logos-rust",
     React: "logos:react",
     Redux: "skill-icons:redux",
-    Spring: "devicon:spring-wordmark",
+    SpringBoot: "logos:spring-icon",
     DotNet: "devicon:dotnetcore",
     Node: "logos:nodejs",
     SPARQL: "vscode-icons:file-type-sparql",
@@ -26,6 +26,10 @@ const languages = {
     MySQL: "logos:mysql",
     MongoDB: "devicon:mongodb-wordmark",
     Firebase: "logos:firebase",
+    Redis : "devicon:redis",
+    Swagger : "devicon:swagger",
+    AuthToken: "oui:token-key",
+    MailService: "simple-icons:amazonsimpleemailservice",
     AWS: "logos:aws",
     EC2: "logos:aws-ec2",
     S3: "logos:aws-s3",
@@ -49,7 +53,8 @@ const projectTechStack = {
     "University-Portal": ["Java Swing", languages.MySQL],
     "Text-Utility-App": [languages.React],
     "my-linkedin-clone": [languages.React, languages.Redux, languages.Node, languages.Express, languages.Firebase],
-    "news-app": [languages.React, languages.Redux]
+    "news-app": [languages.React, languages.Redux],
+    "spring-boot-advanced-template" : [languages.SpringBoot, languages.AuthToken, languages.Redis, languages.MySQL, languages.Swagger, languages.MailService ],
 };
 
 
