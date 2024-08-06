@@ -40,6 +40,10 @@ Click here to visit the Portfolio: **[click here](https://spkothari0.github.io/S
 - You can check it using `npm start`, it will open the website locally on your browser.
 - The icons on homepage under what i do section are from <https://icon-sets.iconify.design/>
 
+## How to deploy
+
+Once you push your latest changes to the github, you need to run `npm run deploy` to deploy the latest changes to gh-pages and make sure your root folder of gh-pages branch is selected on the Pages section in github.
+
 ### Github Information
 
 You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pinned projects) from your github.
