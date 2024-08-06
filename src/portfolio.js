@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
-    "https://drive.google.com/file/d/1YPD4wugu7bSMyvMK-F4Q59w11C-07_-U/view?usp=sharing",
+    "https://drive.google.com/file/d/1YddjDYOxVshmv18IJ2PEJmsqVuxRPMft/view?usp=sharing",
   portfolio_repository: "https://github.com/spkothari0/Shreyas-Portfolio",
   githubProfile: "https://github.com/spkothari0",
 };
