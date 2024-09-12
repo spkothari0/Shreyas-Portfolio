@@ -46,15 +46,19 @@ const languages = {
     ECS: "logos:aws-ecs",
     ECR: "logos:aws-ecr",
     EKS: "logos:aws-eks",
+    Kafka: "logos:kafka",
+    Microservices: "carbon:microservices-1",
+    Gemini: "logos:google-gemini",
+    LangChain: "pepicons-pop:chain-circle-filled",
 };
 
 const projectTechStack = {
+    "Task-Management-Microservice": [languages.SpringBoot, languages.Microservices, languages.Kafka,languages.MySQL, languages.AuthToken, languages.Swagger, languages.Redis],
+    "Text-Summarization-Using-LangChain-Gemini": ["LLM", languages.Python, languages.LangChain, languages.Gemini],
     "ShareFoodBite": [languages.React, languages.Redux, languages.Node, languages.Express, languages.MongoDB, languages.Firebase, languages.Scss],
-    "University-Portal": ["Java Swing", languages.MySQL],
-    "Text-Utility-App": [languages.React],
-    "my-linkedin-clone": [languages.React, languages.Redux, languages.Node, languages.Express, languages.Firebase],
-    "news-app": [languages.React, languages.Redux],
     "spring-boot-advanced-template" : [languages.SpringBoot, languages.AuthToken, languages.Redis, languages.MySQL, languages.Swagger, languages.MailService ],
+    "University-Portal": ["Java Swing", languages.MySQL],
+    "news-app": [languages.React, languages.Redux],
 };
 
 
