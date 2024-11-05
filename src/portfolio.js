@@ -219,6 +219,7 @@ const skills = {
         "⚡ Proficient in designing, deploying, integrting and managing cloud infrastructure on AWS and Azure, ensuring high availability, scalability, and security",
         "⚡ Implemented CI/CD on AWS and Azure for automated testing and deployments, reducing manual errors and increasing efficiency",
         "⚡ Adept at implementing cloud security best practices, including identity and access management (IAM), network security, data encryption",
+        "⚡ Experience with cloud services like EC2, S3, RDS, Lambda, DynamoDB, Route53, VPC, IAM and Hands-on experience with Golden AMI customization tools like Terraform, Packer for IaC",
       ],
       softwareSkills: [
         {
@@ -256,6 +257,20 @@ const skills = {
             color: "#1488C6",
           },
         },
+        {
+          skillName: "Terraform",
+          fontAwesomeClassname: "simple-icons:terraform",
+          style: {
+            color: "#3633ff",
+          },
+        },
+        {
+          skillName: "Packer",
+          fontAwesomeClassname: "devicon-plain:packer-wordmark",
+          style: {
+            color: "#8e9ff0",
+          },
+        }
         // {
         //   skillName: "Kubernetes",
         //   fontAwesomeClassname: "simple-icons:kubernetes",
