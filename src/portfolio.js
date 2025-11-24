@@ -217,6 +217,10 @@ const skills = {
       fileName: "CloudInfraImg",
       skills: [
         "⚡ Proficient in designing, deploying, integrting and managing cloud infrastructure on AWS and Azure, ensuring high availability, scalability, and security",
+        "⚡ Experience with Infrastructure as Code (IaC) using Terraform and Packer to automate provisioning and management of cloud resources",
+        "⚡ Designed a Helm-based packaging solution to automate and synchronize configurations for primary/replica deployments, enabling single-command provisioning and significantly accelerating release cadence",
+        "⚡ Built an Ansible + Python validation framework to automatically test pod health, connectivity, and application reliability in Kubernetes, improving uptime and reducing rollbacks",
+        "⚡ Integrated a Kubernetes Operator into Helm releases and used lifecycle hooks to automate upgrade sequencing and ensure consistent state reconciliation",
         "⚡ Implemented CI/CD on AWS and Azure for automated testing and deployments, reducing manual errors and increasing efficiency",
         "⚡ Adept at implementing cloud security best practices, including identity and access management (IAM), network security, data encryption",
         "⚡ Experience with cloud services like EC2, S3, RDS, Lambda, DynamoDB, Route53, VPC, IAM and Hands-on experience with Golden AMI customization tools like Terraform, Packer for IaC",
@@ -270,14 +274,21 @@ const skills = {
           style: {
             color: "#8e9ff0",
           },
+        },
+        {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "simple-icons:kubernetes",
+          style: {
+            color: "#326CE5",
+          },
+        },
+        {
+          skillName: "Ansible",
+          fontAwesomeClassname: "simple-icons:ansible",
+          style: {
+            color: "#EE0000",
+          },
         }
-        // {
-        //   skillName: "Kubernetes",
-        //   fontAwesomeClassname: "simple-icons:kubernetes",
-        //   style: {
-        //     color: "#326CE5",
-        //   },
-        // },
       ],
     },
     // {
@@ -364,7 +375,7 @@ const degrees = {
       subtitle: "M.S. in Computer Software Engineering",
       logo_path: "neu.png",
       alt_name: "NEU",
-      duration: "2024 - Exp 2025",
+      duration: "Jan 2024 - Apr 2026",
       descriptions: [
         "⚡ I have taken varity of courses related to Software Development which correspond to Application Engineering and Model Development, Web Design and Development, Program Structure and Algorithms",
         "⚡ I have participated in various hackathons, coding competitions and conferences held at MIT and at NEU.",
@@ -568,6 +579,61 @@ const experience = {
                   name: "Tools and Platforms",
                   data: [
                     "Git", "Azure", "Visual Studio 2022", "VS Code", "Postman",
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            title: "Software Engineer Intern",
+            company: "Ribbon Communications",
+            company_url: "https://www.ribboncommunications.com/",
+            logo_path: "ribbon_communications.jpg",
+            duration: "May 2025 - Dec 2025",
+            location: "Boston, MA, USA",
+            description:
+              "As a Software Engineer Intern at Ribbon Communications, I played a critical role in the design, development, and maintenance of ansible playbooks and python scripts for automating network device configurations and deployments. I also worked on enhancing the existing helm charts for better deployment and management of applications in Kubernetes clusters.",
+            color: "#000000",
+            jobResponsibility: {
+              title: "Key Responsibilities and Achievements",
+              responsibilities: [
+                {
+                  name: "Helm Packaging & Multi-Instance Deployment",
+                  data: [
+                    "Designed and implemented a Helm-chart based packaging system for PSX that produces synchronized configurations for primary and replica instances.",
+                    "Enabled single-command provisioning of multi-instance deployments, significantly accelerating release cadence from weeks to days and reducing manual configuration errors."
+                  ]
+                },
+                {
+                  name: "Ansible + Python Validation Framework",
+                  data: [
+                    "Built an automated validation framework using Ansible and Python modules to run pre- and post-deployment checks in Kubernetes.",
+                    "The framework verifies pod health, service connectivity, and application-level endpoints, and is integrated into CI pipelines to detect regressions early — improving availability to 99.9% and cutting rollback events by ~50%."
+                  ]
+                },
+                {
+                  name: "Operator Integration & Automated Upgrades",
+                  data: [
+                    "Integrated a Kubernetes Operator (ROCK) with Helm releases and leveraged Helm lifecycle hooks like pre- and post-upgrade hooks and the Operator's reconciliation loop to orchestrate ordered upgrade sequencing and ensure consistent state reconciliation across clusters, minimizing manual intervention and reducing upgrade risk.",
+                    "Enabled cluster-wide upgrade observability by integrating Operator events with Prometheus and Grafana dashboards, giving real-time visibility into upgrade progress and failure triggers.",
+                    "Coordinated Operator + Helm workflows to support multi-instance deployments with strict order-of-operations (primary → replicas) ensuring telecom-grade consistency across PSX nodes."
+                  ]
+                }
+              ]
+            },
+            technologyUsed: {
+              title: "Technology and Tools Used",
+              technologies: [
+                {
+                  name: "Automation & Scripting",
+                  data: [
+                    "Ansible", "Python", "Jinja2", "YAML"
+                  ]
+                },
+                {
+                  name: "Containerization & Orchestration",
+                  data: [
+                    "Helm", "Kubernetes", "Docker"
                   ]
                 }
               ]
