@@ -450,6 +450,61 @@ const experience = {
       experiences: [
         [
           {
+            title: "Software Engineer Intern",
+            company: "Ribbon Communications",
+            company_url: "https://www.ribboncommunications.com/",
+            logo_path: "ribbon_communications.jpg",
+            duration: "May 2025 - Dec 2025",
+            location: "Boston, MA, USA",
+            description:
+              "As a Software Engineer Intern at Ribbon Communications, I played a critical role in the design, development, and maintenance of ansible playbooks and python scripts for automating network device configurations and deployments. I also worked on enhancing the existing helm charts for better deployment and management of applications in Kubernetes clusters.",
+            color: "#000000",
+            jobResponsibility: {
+              title: "Key Responsibilities and Achievements",
+              responsibilities: [
+                {
+                  name: "Helm Packaging & Multi-Instance Deployment",
+                  data: [
+                    "Designed and implemented a Helm-chart based packaging system for PSX that produces synchronized configurations for primary and replica instances.",
+                    "Enabled single-command provisioning of multi-instance deployments, significantly accelerating release cadence from weeks to days and reducing manual configuration errors."
+                  ]
+                },
+                {
+                  name: "Ansible + Python Validation Framework",
+                  data: [
+                    "Built an automated validation framework using Ansible and Python modules to run pre- and post-deployment checks in Kubernetes.",
+                    "The framework verifies pod health, service connectivity, and application-level endpoints, and is integrated into CI pipelines to detect regressions early — improving availability to 99.9% and cutting rollback events by ~50%."
+                  ]
+                },
+                {
+                  name: "Operator Integration & Automated Upgrades",
+                  data: [
+                    "Integrated a Kubernetes Operator (ROCK) with Helm releases and leveraged Helm lifecycle hooks like pre- and post-upgrade hooks and the Operator's reconciliation loop to orchestrate ordered upgrade sequencing and ensure consistent state reconciliation across clusters, minimizing manual intervention and reducing upgrade risk.",
+                    "Enabled cluster-wide upgrade observability by integrating Operator events with Prometheus and Grafana dashboards, giving real-time visibility into upgrade progress and failure triggers.",
+                    "Coordinated Operator + Helm workflows to support multi-instance deployments with strict order-of-operations (primary → replicas) ensuring telecom-grade consistency across PSX nodes."
+                  ]
+                }
+              ]
+            },
+            technologyUsed: {
+              title: "Technology and Tools Used",
+              technologies: [
+                {
+                  name: "Automation & Scripting",
+                  data: [
+                    "Ansible", "Python", "Jinja2", "YAML"
+                  ]
+                },
+                {
+                  name: "Containerization & Orchestration",
+                  data: [
+                    "Helm", "Kubernetes", "Docker"
+                  ]
+                }
+              ]
+            }
+          },
+          {
             title: "Senior Full Stack Developer",
             company: "Accenture India",
             company_url: "https://www.accenture.com/in-en",
@@ -579,61 +634,6 @@ const experience = {
                   name: "Tools and Platforms",
                   data: [
                     "Git", "Azure", "Visual Studio 2022", "VS Code", "Postman",
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            title: "Software Engineer Intern",
-            company: "Ribbon Communications",
-            company_url: "https://www.ribboncommunications.com/",
-            logo_path: "ribbon_communications.jpg",
-            duration: "May 2025 - Dec 2025",
-            location: "Boston, MA, USA",
-            description:
-              "As a Software Engineer Intern at Ribbon Communications, I played a critical role in the design, development, and maintenance of ansible playbooks and python scripts for automating network device configurations and deployments. I also worked on enhancing the existing helm charts for better deployment and management of applications in Kubernetes clusters.",
-            color: "#000000",
-            jobResponsibility: {
-              title: "Key Responsibilities and Achievements",
-              responsibilities: [
-                {
-                  name: "Helm Packaging & Multi-Instance Deployment",
-                  data: [
-                    "Designed and implemented a Helm-chart based packaging system for PSX that produces synchronized configurations for primary and replica instances.",
-                    "Enabled single-command provisioning of multi-instance deployments, significantly accelerating release cadence from weeks to days and reducing manual configuration errors."
-                  ]
-                },
-                {
-                  name: "Ansible + Python Validation Framework",
-                  data: [
-                    "Built an automated validation framework using Ansible and Python modules to run pre- and post-deployment checks in Kubernetes.",
-                    "The framework verifies pod health, service connectivity, and application-level endpoints, and is integrated into CI pipelines to detect regressions early — improving availability to 99.9% and cutting rollback events by ~50%."
-                  ]
-                },
-                {
-                  name: "Operator Integration & Automated Upgrades",
-                  data: [
-                    "Integrated a Kubernetes Operator (ROCK) with Helm releases and leveraged Helm lifecycle hooks like pre- and post-upgrade hooks and the Operator's reconciliation loop to orchestrate ordered upgrade sequencing and ensure consistent state reconciliation across clusters, minimizing manual intervention and reducing upgrade risk.",
-                    "Enabled cluster-wide upgrade observability by integrating Operator events with Prometheus and Grafana dashboards, giving real-time visibility into upgrade progress and failure triggers.",
-                    "Coordinated Operator + Helm workflows to support multi-instance deployments with strict order-of-operations (primary → replicas) ensuring telecom-grade consistency across PSX nodes."
-                  ]
-                }
-              ]
-            },
-            technologyUsed: {
-              title: "Technology and Tools Used",
-              technologies: [
-                {
-                  name: "Automation & Scripting",
-                  data: [
-                    "Ansible", "Python", "Jinja2", "YAML"
-                  ]
-                },
-                {
-                  name: "Containerization & Orchestration",
-                  data: [
-                    "Helm", "Kubernetes", "Docker"
                   ]
                 }
               ]
