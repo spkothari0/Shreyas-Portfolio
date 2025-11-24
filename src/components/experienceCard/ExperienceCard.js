@@ -47,10 +47,13 @@ class ExperienceCard extends Component {
                     <div className="repo-description" />
                     {experience["description"]}
                   </div>
-                  <div className='job-information'>
-                    {experience.jobResponsibility && <JobResponsibilityCard jobResponsibility={experience.jobResponsibility} theme={theme} />}
-                    {experience.technologyUsed && <TechnologyUsed technologyUsed={experience.technologyUsed} theme={theme} />}
-                  </div>
+                    <details className='job-information'>
+                      <summary style={{cursor:"pointer", fontFamily:"Google Sans Medium", color: theme.text}}>
+                        Responsibilities & Technologies
+                      </summary>
+                      {experience.jobResponsibility && <JobResponsibilityCard jobResponsibility={experience.jobResponsibility} theme={theme} />}
+                      {experience.technologyUsed && <TechnologyUsed technologyUsed={experience.technologyUsed} theme={theme} />}
+                    </details>
                 </div>
               </div>
             </Fade>

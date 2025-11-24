@@ -441,7 +441,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work",
   description:
-    "As a seasoned Full Stack Developer with a strong foundation in back-end, DevOps and front-end technologies, I have contributed significantly to multiple high-impact projects at Accenture India and then worked as intern at Ribbon Communications. Over the years, I have honed my skills in designing, developing, and deploying sophisticated web applications and services. My expertise spans across various technologies, frameworks, and tools, ensuring efficient and maintainable code, seamless user experiences, and optimized application performance.",
+    "As a seasoned Full Stack Developer with a strong foundation in back-end and DevOps technologies, I have contributed significantly to multiple high-impact projects at Accenture India and then worked as intern at Ribbon Communications. Over the years, I have honed my skills in designing, developing, and deploying sophisticated web applications and services. My expertise spans across various technologies, frameworks, and tools, ensuring efficient and maintainable code, seamless user experiences, and optimized application performance.",
   header_image_path: "experience.svg",
   sections: [
     {

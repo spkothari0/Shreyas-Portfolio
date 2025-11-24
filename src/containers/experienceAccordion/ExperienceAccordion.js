@@ -1,63 +1,61 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
-import { Accordion, Panel } from "baseui/accordion";
 import { MdWork } from "react-icons/md";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-class ExperienceAccordion extends Component {
-  render() {
-    const theme = this.props.theme;
-    return (
-      <div className="experience-accord">
-        <Accordion>
-          {this.props.sections.map((section) => {
-            return (
-              <Panel
-                className="accord-panel"
-                title={
-                  <>
-                    <MdWork size="1.5em" />
-                    {section["title"]}
-                  </>
-                }
-                key={section["title"]}
-                overrides={{
-                  Header: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                      border: `1px solid`,
-                      borderRadius: `5px`,
-                      borderColor: `${theme.headerColor}`,
-                      marginBottom: `3px`,
-                      fontFamily: "Google Sans Regular",
-                      color: `${theme.text}`,
-                      fontSize: "25px",
-                      fontWeight: "bold",
-                      ":hover": {
-                        // color: `${theme.secondaryText}`,
-                        backgroundColor: `${theme.headerColor}`,
-                      },
-                    }),
-                  },
-                  Content: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                    }),
-                  },
-                }}
-              >
-                {section["experiences"].map((experience, index) => {
-                  return (
-                    <ExperienceCard index={index} totalCards={section["experiences"].length} experience={experience} theme={theme} />
-                  );
-                })}
-              </Panel>
-            );
-          })}
-        </Accordion>
-      </div>
-    );
-  }
-}
+// Accessible, custom accordion + timeline layout
+const ExperienceAccordion = ({ sections, theme }) => {
+  const [openSections, setOpenSections] = useState(() =>
+    sections.map(() => true) // default open; can set to false if collapsed view preferred
+  );
+
+  const toggleSection = (idx) => {
+    setOpenSections((prev) => prev.map((o, i) => (i === idx ? !o : o)));
+  };
+
+  return (
+    <div className="experience-accord">
+      {sections.map((section, idx) => {
+        const isOpen = openSections[idx];
+        return (
+          <section className="experience-section" key={section.title}>
+            <button
+              type="button"
+              className="experience-section-toggle"
+              aria-expanded={isOpen}
+              onClick={() => toggleSection(idx)}
+              style={{
+                background: theme.body,
+                borderColor: theme.headerColor,
+                color: theme.text,
+              }}
+            >
+              <span className="experience-section-title">
+                <MdWork size="1.4em" style={{ marginRight: 8 }} /> {section.title}
+              </span>
+              <span className="experience-section-icon" aria-hidden="true">
+                {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+              </span>
+            </button>
+            {isOpen && (
+              <div className="experience-items" role="list">
+                {section.experiences.map((experienceGroup, index) => (
+                  <ExperienceCard
+                    key={`exp-group-${index}`}
+                    index={index}
+                    totalCards={section.experiences.length}
+                    experience={experienceGroup}
+                    theme={theme}
+                  />
+                ))}
+              </div>
+            )}
+          </section>
+        );
+      })}
+    </div>
+  );
+};
 
 export default ExperienceAccordion;

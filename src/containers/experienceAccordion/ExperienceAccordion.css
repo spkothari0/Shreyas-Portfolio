@@ -1,13 +1,102 @@
 .experience-accord {
-  margin: 50px;
+  margin: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.accord-panel {
-  font-family: "Google Sans Regular";
+.experience-section {
+  position: relative;
+  padding-left: 22px; /* space for timeline */
 }
 
-@media (max-width: 768px) {
+
+.experience-section-toggle {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-family: "Google Sans Medium";
+  padding: 18px 24px;
+  border: 1px solid;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: background .25s ease, box-shadow .25s ease;
+}
+
+.experience-section-toggle:hover,
+.experience-section-toggle:focus-visible {
+  background: var(--toggle-hover,#f5f7fa);
+  box-shadow: 0 4px 14px -4px rgba(0,0,0,.15);
+  outline: none;
+}
+
+.experience-section-toggle:focus-visible {
+  box-shadow: 0 0 0 3px rgba(100,100,255,.35);
+}
+
+.experience-section-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.experience-section-icon svg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.experience-items {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+/* Card refinements */
+.experience-card {
+  position: relative;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 6px 24px -8px rgba(0,0,0,.18);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 32px -10px rgba(0,0,0,.25);
+}
+
+/* Timeline visuals removed to simplify layout. */
+
+@media (max-width: 900px) {
   .experience-accord {
-    margin: 20px;
+    margin: 32px 28px;
+  }
+  .experience-section:before {
+    left: 6px;
+  }
+  .experience-list-item:before {
+    left: -18px;
   }
 }
+
+@media (max-width: 600px) {
+  .experience-accord {
+    margin: 24px 18px;
+    gap: 28px;
+  }
+  .experience-section-toggle {
+    font-size: 1.1rem;
+    padding: 14px 18px;
+  }
+  .experience-section:before {
+    display: none; /* hide vertical bar on very small screens */
+  }
+  .experience-list-item:before {
+    display: none; /* hide dots for compact view */
+  }
+}
+
