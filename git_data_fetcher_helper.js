@@ -50,6 +50,8 @@ const languages = {
     Microservices: "carbon:microservices-1",
     Gemini: "logos:google-gemini",
     LangChain: "pepicons-pop:chain-circle-filled",
+    OpenAI: "logos:openai",
+    Terraform: "logos:terraform",
 };
 
 const projectTechStack = {
@@ -59,6 +61,8 @@ const projectTechStack = {
     "spring-boot-advanced-template" : [languages.SpringBoot, languages.AuthToken, languages.Redis, languages.MySQL, languages.Swagger, languages.MailService ],
     "University-Portal": ["Java Swing", languages.MySQL],
     "news-app": [languages.React, languages.Redux],
+    "ResumeTalk": ["LLM", languages.Python, languages.LangChain, languages.OpenAI],
+    "tf-aws-infra": [languages.SpringBoot, languages.Terraform, languages.Dockerfile, languages.AWS, languages.EC2, languages.S3, languages.RDS, languages.VPC],
 };
 
 

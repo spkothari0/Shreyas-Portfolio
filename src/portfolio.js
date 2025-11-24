@@ -441,7 +441,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work",
   description:
-    "As a seasoned Full Stack Developer with a strong foundation in both front-end and back-end technologies, I have contributed significantly to multiple high-impact projects at Accenture India. Over the years, I have honed my skills in designing, developing, and deploying sophisticated web applications and services. My expertise spans across various technologies, frameworks, and tools, ensuring efficient and maintainable code, seamless user experiences, and optimized application performance.",
+    "As a seasoned Full Stack Developer with a strong foundation in back-end, DevOps and front-end technologies, I have contributed significantly to multiple high-impact projects at Accenture India and then worked as intern at Ribbon Communications. Over the years, I have honed my skills in designing, developing, and deploying sophisticated web applications and services. My expertise spans across various technologies, frameworks, and tools, ensuring efficient and maintainable code, seamless user experiences, and optimized application performance.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -710,7 +710,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "ShreyasProfessional.jpg",
     description:
-      "👋I'm easily reachable on various social platforms and typically respond within 2-3 working days.📧For swift communication, reach out via email or LinkedIn. 🎯Currently seeking internships or co-op roles, particularly in Software Development💻 and Cloud Computing☁️. Looking forward to connecting with you !!😊",
+      "👋I'm easily reachable on various social platforms and typically respond within 2-3 working days.📧For swift communication, reach out via email or LinkedIn. 🎯Currently seeking full-time roles, particularly in Software Development💻 and Cloud Computing/DevOps☁️. Looking forward to connecting with you !!😊",
   },
 
   // blogSection: {
