@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Shreyas-Portfolio/static/css/main.f6511c00.chunk.css",
-    "main.js": "/Shreyas-Portfolio/static/js/main.16d08564.chunk.js",
-    "main.js.map": "/Shreyas-Portfolio/static/js/main.16d08564.chunk.js.map",
+    "main.js": "/Shreyas-Portfolio/static/js/main.62c52206.chunk.js",
+    "main.js.map": "/Shreyas-Portfolio/static/js/main.62c52206.chunk.js.map",
     "runtime-main.js": "/Shreyas-Portfolio/static/js/runtime-main.a6bb232f.js",
     "runtime-main.js.map": "/Shreyas-Portfolio/static/js/runtime-main.a6bb232f.js.map",
     "static/js/2.b858257f.chunk.js": "/Shreyas-Portfolio/static/js/2.b858257f.chunk.js",
     "static/js/2.b858257f.chunk.js.map": "/Shreyas-Portfolio/static/js/2.b858257f.chunk.js.map",
     "index.html": "/Shreyas-Portfolio/index.html",
-    "precache-manifest.76aec8f8e99f6a66b8d8d0574565a290.js": "/Shreyas-Portfolio/precache-manifest.76aec8f8e99f6a66b8d8d0574565a290.js",
+    "precache-manifest.d96c44618a3a0797e440a56f0ceb96ef.js": "/Shreyas-Portfolio/precache-manifest.d96c44618a3a0797e440a56f0ceb96ef.js",
     "service-worker.js": "/Shreyas-Portfolio/service-worker.js",
     "static/css/main.f6511c00.chunk.css.map": "/Shreyas-Portfolio/static/css/main.f6511c00.chunk.css.map",
     "static/media/index.css": "/Shreyas-Portfolio/static/media/Montserrat-Regular.ee653992.ttf",
@@ -51,6 +51,6 @@
     "static/js/runtime-main.a6bb232f.js",
     "static/js/2.b858257f.chunk.js",
     "static/css/main.f6511c00.chunk.css",
-    "static/js/main.16d08564.chunk.js"
+    "static/js/main.62c52206.chunk.js"
   ]
 }
