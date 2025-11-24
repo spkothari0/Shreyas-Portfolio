@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Shreyas's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "AWS-Certified (Developer Associate & Solutions Architect) Backend & DevOps Engineer with 3 years of experience and 8 months of internship experience, growing LLM expertise, and a passion for scalable systems, cloud-native automation, and building impactful products while continuously learning new technologies.",
   og: {
     title: "Shreyas Kothari Portfolio",
     type: "website",
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "ShreyasKothari",
   nickname: "Shrey",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "AWS-Certified (Developer Associate & Solutions Architect) Backend & DevOps Engineer with 3 years of experience and 8 months of internship experience, growing LLM expertise, and a passion for scalable systems, cloud-native automation, and building impactful products while continuously learning new technologies.",
   resumeLink:
     "https://drive.google.com/file/d/1YddjDYOxVshmv18IJ2PEJmsqVuxRPMft/view?usp=sharing",
   portfolio_repository: "https://github.com/spkothari0/Shreyas-Portfolio",
