@@ -1,18 +1,70 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
 import "./GithubRepoCard.css";
 import { Fade } from "react-reveal";
 
 export default function GithubRepoCard({ repo, theme }) {
-  function openRepoinNewTab(url) {
+  const [hover, setHover] = useState(false);
+
+  const openRepoinNewTab = useCallback((url) => {
     var win = window.open(url, "_blank");
-    win.focus();
-  }
+    if (win) win.focus();
+  }, []);
+
+  // simple color lightener: supports #rrggbb, #rgb, rgb(...) formats
+  const lightenColor = useCallback((color, amount) => {
+    if (!color) return color;
+    try {
+      color = String(color).trim();
+      if (color.startsWith("#")) {
+        // hex
+        let hex = color.slice(1);
+        if (hex.length === 3) {
+          hex = hex.split("").map((c) => c + c).join("");
+        }
+        const num = parseInt(hex, 16);
+        let r = (num >> 16) & 255;
+        let g = (num >> 8) & 255;
+        let b = num & 255;
+        r = Math.round(r + (255 - r) * amount);
+        g = Math.round(g + (255 - g) * amount);
+        b = Math.round(b + (255 - b) * amount);
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+      if (color.startsWith("rgb")) {
+        const parts = color.replace(/rgba?\(/, "").replace(/\)/, "").split(",").map(p => parseFloat(p));
+        let [r, g, b, a] = parts;
+        r = Math.round(r + (255 - r) * amount);
+        g = Math.round(g + (255 - g) * amount);
+        b = Math.round(b + (255 - b) * amount);
+        return a !== undefined ? `rgba(${r}, ${g}, ${b}, ${a})` : `rgb(${r}, ${g}, ${b})`;
+      }
+      // fallback: return original
+      return color;
+    } catch (e) {
+      return color;
+    }
+  }, []);
+
+  const bg = hover ? lightenColor(theme.highlight || "#ffffff", 0.06) : theme.highlight;
 
   return (
-    <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
+    <div
+      className="repo-card-div"
+      style={{ backgroundColor: bg }}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
       <Fade bottom duration={2000} distance="40px">
-        <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)}>
+        <div
+          key={repo.id}
+          onClick={() => openRepoinNewTab(repo.url)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") openRepoinNewTab(repo.url);
+          }}
+        >
           <div className="repo-name-div">
             <svg
               aria-hidden="true"

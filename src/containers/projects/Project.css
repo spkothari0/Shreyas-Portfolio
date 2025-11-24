@@ -1,7 +1,9 @@
 .project-title {
-  font-size: 56px;
-  font-weight: 400;
-  line-height: normal;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.05;
+  text-align: center;
+  margin-bottom: 18px;
 }
 
 .startup-project-text img {
@@ -11,8 +13,9 @@
 
 .repo-cards-div-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  align-items: start;
 }
 
 /* Media Query */
